@@ -13,8 +13,13 @@ section{
     background: #00ff00;
 }
 .form-box{
+<<<<<<< HEAD
     position: relative
     height: 450%;
+=======
+    position: relative;
+    height: 450px;
+>>>>>>> ad15903cc9c53dd101ff3060e1ca27e70b01940f
     width: 400px;
     background: red;
     display: flex;
