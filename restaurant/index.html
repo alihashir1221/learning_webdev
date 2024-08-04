@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+
+        .header {
+            background-color: #f0385a;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin-bottom: 10px;
+        }
+
+        .header input {
+            width: 80%;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .promo-banner {
+            margin: 20px 0;
+            background-color: #ffcccb;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .category {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .category:hover {
+            background-color: #f0f0f0;
+        }
+
+        .restaurants {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .restaurant {
+            background-color: white;
+            width: 45%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .restaurant img {
+            width: 100%;
+            height: auto;
+        }
+
+        .restaurant-info {
+            padding: 15px;
+        }
+
+        .restaurant-info h3 {
+            margin-bottom: 10px;
+        }
+
+        .restaurant-info p {
+            color: #777;
+        }
+
+        .restaurant-info .details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .footer {
+            background-color: #2e0a04;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div>
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>Food</h1>
+        <input type="text" placeholder="Search for restaurants or dishes">
+    </div>
+
+    <div class="container">
+        <div class="promo-banner">
+            Get 20% off on your first order! Use code: FIRST20
+        </div>
+
+        <div class="categories">
+            <div class="category">
+                <p>Breakfast</p>
+            </div>
+            <div class="category">
+                <p>Lunch</p>
+            </div>
+            <div class="category">
+                <p>Snacks</p>
+            </div>
+            <div class="category">
+                <p>Desserts</p>
+            </div>
+        </div>
+
+        <div class="restaurants">
+            <div class="restaurant">
+                <img src="https://via.placeholder.com/300x200" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Restaurant Name 1</h3>
+                    <p>Italian, Chinese, Indian</p>
+                    <div class="details">
+                        <p>4.5 ★ (200 Reviews)</p>
+                        <p>$$$</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant">
+                <img src="https://via.placeholder.com/300x200" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Restaurant Name 2</h3>
+                    <p>Mexican, Thai, Indian</p>
+                    <div class="details">
+                        <p>4.2 ★ (150 Reviews)</p>
+                        <p>$$</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant">
+                <img src="https://via.placeholder.com/300x200" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Restaurant Name 3</h3>
+                    <p>Continental, Fast Food</p>
+                    <div class="details">
+                        <p>4.0 ★ (180 Reviews)</p>
+                        <p>$$</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant">
+                <img src="https://via.placeholder.com/300x200" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Restaurant Name 4</h3>
+                    <p>Chinese, Indian</p>
+                    <div class="details">
+                        <p>4.7 ★ (250 Reviews)</p>
+                        <p>$$$</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant">
+                <img src="https://via.placeholder.com/300x200" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Restaurant Name 5</h3>
+                    <p>Italian, Pizza</p>
+                    <div class="details">
+                        <p>4.3 ★ (300 Reviews)</p>
+                        <p>$$</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant">
+                <img src="https://via.placeholder.com/300x200" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Restaurant Name 6</h3>
+                    <p>Japanese, Sushi</p>
+                    <div class="details">
+                        <p>4.6 ★ (220 Reviews)</p>
+                        <p>$$$</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant">
+                <img src="https://via.placeholder.com/300x200" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Restaurant Name 7</h3>
+                    <p>Indian, BBQ</p>
+                    <div class="details">
+                        <p>4.1 ★ (170 Reviews)</p>
+                        <p>$$</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant">
+                <img src="https://via.placeholder.com/300x200" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Restaurant Name 8</h3>
+                    <p>Fast Food, American</p>
+                    <div class="details">
+                        <p>3.9 ★ (110 Reviews)</p>
+                        <p>$</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant">
+                <img src="https://via.placeholder.com/300x200" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Restaurant Name 9</h3>
+                    <p>Vegan, Healthy</p>
+                    <div class="details">
+                        <p>4.8 ★ (180 Reviews)</p>
+                        <p>$$</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant">
+                <img src="https://via.placeholder.com/300x200" alt="Restaurant Image">
+                <div class="restaurant-info">
+                    <h3>Restaurant Name 10</h3>
+                    <p>Desserts, Bakery</p>
+                    <div class="details">
+                        <p>4.9 ★ (300 Reviews)</p>
+                        <p>$$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Zylae. All Rights Reserved.</p>
+        <p>Contact Us | Privacy Policy | Terms of Service</p>
+    </div>
+</body>
+</html>
